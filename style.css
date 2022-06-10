@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #444;
+}
+body {
+  background-image: linear-gradient(to bottom, #aeb6bf, #eee8d0);
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+section {
+  width: 60vw;
+  margin: 5% auto;
+  display: grid;
+  gap: 20px;
+  padding: 4%;
+  background: #fff;
+  line-height: 1.5;
+  text-align: justify;
+  border-radius: 4px;
+}

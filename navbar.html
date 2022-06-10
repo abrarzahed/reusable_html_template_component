@@ -1,0 +1,46 @@
+<!-- ||||||||||||||
+These code are executing through fetch api by app.js into all html pages 
+|||||||||||||| -->
+<div class="logo"><i class="fas fa-meteor fa-2x"></i> LOGO HERE</div>
+<ul class="menu">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/about.html">About</a></li>
+  <li><a href="/contact.html">Contact</a></li>
+</ul>
+
+<style>
+  /* Menu bar style start here */
+  .navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #fff;
+    border-bottom: 6px solid #e67e22;
+    font-weight: 700;
+    font-size: larger;
+    letter-spacing: 3px;
+  }
+  .navbar i {
+    color: #e67e22;
+  }
+  .navbar .menu {
+    display: flex;
+    gap: 20px;
+    color: #666;
+  }
+  .navbar .menu a {
+    color: #666;
+  }
+</style>
+
+<script>
+  // To test how  javascript code works which are executing from a nested html template.
+  const firstMenuItem = document.querySelectorAll(".menu li")[0];
+  firstMenuItem.addEventListener("click", (e) => {
+    e.preventDefault();
+    alert("You clicked on home link");
+    window.location.href = "/index.html";
+  });
+</script>
